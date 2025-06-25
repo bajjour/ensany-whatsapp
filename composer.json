@@ -1,0 +1,29 @@
+{
+  "name": "bajjour/ensany-whatsapp",
+  "version": "1.0.0",
+  "description": "A Laravel package for Send Whatsapp messages using ensany backend",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "EnsanyWhatsapp\\": "src/"
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
+    "illuminate/cache": "^9.0|^10.0|^11.0|^12.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "EnsanyWhatsapp\\EnsanyWhatsappServiceProvider"
+      ],
+      "aliases": {
+        "EnsanyWhatsapp": "EnsanyWhatsapp\\Facades\\EnsanyWhatsapp"
+      }
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
