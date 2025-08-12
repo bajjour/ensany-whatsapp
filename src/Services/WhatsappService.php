@@ -15,7 +15,7 @@ class WhatsappService implements WhatsappInterface
         $this->send_mobile = $send_mobile;
     }
 
-    public function send_text(String $mobile, string $text): array
+    public function send_text(String $mobile, string $text): array|null
     {
         $response = Http::withHeaders([
             'api-key' => $this->apiKey,
